@@ -1,0 +1,15 @@
+#Projecten-Title-Text{
+    text-align: center;
+    size: 40px;
+}
+
+#page-selection{
+    text-align: center;
+}
+
+.page-button{
+    height: 25px;
+    width: 25px;
+    margin: 5px;
+    size: 20px;
+}
