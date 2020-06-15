@@ -20,7 +20,7 @@ CREATE TABLE `author` (
   `id` int PRIMARY KEY AUTO_INCREMENT,
   `email` varchar(32),
   `name` varchar(64),
-  `password` varchar(64)
+  `password` varchar(512)
 );
 
 CREATE TABLE `errors` (
@@ -37,8 +37,8 @@ ALTER TABLE `author` ADD FOREIGN KEY (`name`) REFERENCES `portofolio` (`author`)
 INSERT INTO `author`(
     `name`,
      `password`
-   )VALUES('Root','root');
-
+   )VALUES('Root','0bd81595c97a137995e011f13f140ae09d3caada1811c55c52ddc141d07b0bbfa714a2e4504c5260a6a22be935f12f94e8ed993361c380171cd3db6e56af91ef');
+-- Password is rootlogin
 
    INSERT INTO `errors`(
     `id`,

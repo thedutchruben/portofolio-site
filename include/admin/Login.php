@@ -9,8 +9,8 @@ include '../database/mysql.php';
 if(isset($_POST['Login'])) {
 
     $uname = mysqli_real_escape_string($con, $_POST['username']);
-    $password = mysqli_real_escape_string($con, $_POST['password']);
 
+    $password = hash('sha512', mysqli_real_escape_string($con, $_POST['password']));
     if ($uname != "" && $password != "") {
 
         $sql_query = "select count(*) as cntUser from author where name='" . $uname . "' and password='" . $password . "'";
