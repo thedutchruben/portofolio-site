@@ -1,4 +1,7 @@
-
+<?php
+include_once '../include/admin/Authenticate.php';
+isActive();
+?>
 <!DOCTYPE html>
 <html lang="en" >
 <head>
@@ -34,7 +37,7 @@
         <input type="date" name="date" placeholder="date" id="date" required>
 
         <br>
-        <input type="file" name="fileToUpload" id="fileToUpload" size="1M"  accept="image/*" alt="" multiple required>
+        <input type="file" name="fileToUpload" id="fileToUpload" size="1M"  accept="image/*" alt="" required>
         <br>
         <input type="submit" value="CreatePage" name="CreatePage" id="CreatePage">
     </form>
