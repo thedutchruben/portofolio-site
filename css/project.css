@@ -1,0 +1,16 @@
+div #project-title{
+    height: 200px;
+    width: 100%;
+
+}
+
+h2 #project-title-text{
+    text-align: center;
+    size: 40px;
+}
+
+
+#project-text{
+    padding: 10px;
+    border: 1px black solid;
+}
