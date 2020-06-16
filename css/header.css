@@ -31,3 +31,5 @@
 .nav-bar-li:hover{
     background-color: #562aab;
 }
+
+a { color: inherit; }

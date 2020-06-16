@@ -5,11 +5,13 @@
 
 #page-selection{
     text-align: center;
+    margin: 10px;
+    border: 1px gray solid;
 }
 
 .page-button{
     height: 25px;
     width: 25px;
-    margin: 5px;
-    size: 20px;
+    font-size: 20px;
+    margin: 10px;
 }

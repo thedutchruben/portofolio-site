@@ -33,7 +33,7 @@ $page = $_GET['page'];
         echo "<div id='project-".$row['id']."'>";
         echo "<h2>".$row['title']."</h2>";
         echo "<p>".substr($row['description'], 0, 150)."</p>";
-        echo "<a href='project.php?project=".$row['id']."'>'"."Open"."</a>";
+        echo "<a href='project.php?project=".$row['id']."'>"."Open"."</a>";
         echo "</div>";
     }
     ?>
