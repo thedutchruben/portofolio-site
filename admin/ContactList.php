@@ -1,7 +1,7 @@
 <?php
-include '../include/admin/Authenticate.php';
+include_once '../include/admin/Authenticate.php';
 isActive();
-include '../include/admin/RankHandle.php';
+include_once '../include/admin/RankHandle.php';
 
 ?>
 
@@ -19,26 +19,21 @@ include '../include/admin/RankHandle.php';
 
 
 
-<?php
-echo "Rank : " . getRank()->getName();
-?>
 <table style="width: 100%">
     <tr>
-        <th>Postname</th>
-        <th></th>
+        <th>Title</th>
         <th></th>
     </tr>
 
     <?php
     include "../include/database/mysql.php";
-    $sql_query = "SELECT title,id FROM `portofolio`";
+    $sql_query = "SELECT naam,id FROM `contact`";
     $result = mysqli_query($con, $sql_query);
 
     while($row = mysqli_fetch_array($result)){
         echo "<tr>";
-        echo "<td>".$row['title']."</td>";
-        echo "<td><a href='updatePage.php?project=".$row['id']."'>Edit</a></td>";
-        echo "<td><a href='deletePage.php?project=".$row['id']."'>Delete</a></td>";
+        echo "<td>".$row['naam']."</td>";
+        echo "<td><a href='Contact.php.php?id=".$row['id']."'>Open</a></td>";
         echo " </tr>";
     }
     ?>
@@ -52,6 +47,3 @@ echo "Rank : " . getRank()->getName();
 
 </body>
 </html>
-
-
-

@@ -37,7 +37,7 @@ include "include/database/loadProject.php";
     $result2 = mysqli_query($con, $sql_query2);
     while($row2 = mysqli_fetch_array($result2)){
         echo "<div class=\"slides fade\">";
-        echo "<img src=\"" . "upload/" . $row2['imageName'] . "\" style=\"width:100%\">";
+        echo "<img class=\"slide\" src=\"" . "upload/" . $row2['imageName'] . "\" style=\"width:400px\";\"height:250px\";>";
         echo "</div>";
     }
     $con->close();

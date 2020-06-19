@@ -1,4 +1,7 @@
 <?php
+include '../admin/Authenticate.php';
+
+isActive();
 function image($last_id){
     $con = mysqli_connect("school-mysql-1", "root", "walrus", "portofolio");
     $target_dir = "../../upload/";

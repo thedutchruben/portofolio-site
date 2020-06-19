@@ -1,6 +1,8 @@
 <?php
 include '../database/mysql.php';
+include '../admin/Authenticate.php';
 
+isActive();
 
 if(isset($_POST['CreateUser'])) {
     $uname = mysqli_real_escape_string($con, $_POST['username']);

@@ -1,7 +1,3 @@
-<?php
-
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,12 +9,12 @@
   <?php include_once "include/html/Header.html" ?>
 
   <div class="welkomMessage">
+      <p>
+          Welkom bij mijn porfolio hier ga je Projecten vinden die ik heb gemaakt.
+      </p>
 
   </div>
 
-  <div class="projecten">
-
-  </div>
   <?php include_once "include/html/Footer.html" ?>
 
 </body>

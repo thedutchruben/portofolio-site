@@ -9,7 +9,7 @@ isActive();
     <title>AdminPanel</title>
 </head>
 <body>
-<?php include_once "include/admin/AdminHeader.html"?>
+<?php include_once "../include/admin/AdminHeader.html"?>
 
 <div class="CreatePage">
     <h2>Create a page</h2>
@@ -37,7 +37,7 @@ isActive();
         <input type="date" name="date" placeholder="date" id="date" required>
 
         <br>
-        <input type="file" name="fileToUpload" id="fileToUpload" size="1M"  accept="image/*" alt="" required>
+        <input type="file" name="fileToUpload" id="fileToUpload" size="1M"  accept="image/*">
         <br>
         <input type="submit" value="CreatePage" name="CreatePage" id="CreatePage">
     </form>

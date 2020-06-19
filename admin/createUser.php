@@ -9,7 +9,8 @@ isActive();
     <title>AdminPanel</title>
 </head>
 <body>
-<?php include_once "include/admin/AdminHeader.html"?>
+<?php include_once "../include/admin/AdminHeader.html"?>
+
 
 <div class="CreateUser">
     <h2>Create a user</h2>
